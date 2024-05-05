@@ -1,1 +1,6 @@
-const reverseWords = (str) => str.split(" ").reverse().join(" ");
+const gcdRecursive = (a, b) => {
+  if (b === 0) {
+    return a;
+  }
+  return gcdRecursive(b, a % b);
+};
